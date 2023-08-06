@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="contaner">
+        <div class="dashboard">
+            <!-- Header -->
+            <header> 
+                <h4>Now playing:</h4>
+                <h2 class="heading">fade alanwoaker</h2>
+            </header>
+            <!-- CD -->
+            <div class="cd">
+                <img src="./image/fade.png" alt="">
+            </div>
+        </div>
+        <div class="control">
+            <div class="control-btn">
+                <div class="return">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="prev">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="play">
+                    <div class="playing"><i class="fa-solid fa-play"></i></div>
+                   
+                </div>
+                <div class="next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div class="random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+
+            <input type="range" class="progress" value="0" step="1" min="0" max="100">
+            <audio src="./songs/fade.mp3" class="audio"></audio>
+        </div>
+        <div class="list-song">
+            
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
